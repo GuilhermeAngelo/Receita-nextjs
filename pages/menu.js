@@ -1,3 +1,7 @@
+import { Links } from "./pweb/pweb"
+
+Links
+
 export function Menu(){
 
     return (
@@ -23,11 +27,9 @@ export function Menu(){
 export default function Principal(){
 
     return (
- 
        <div>
-
-          <Menu/>
           <hr></hr>
+          <Links/>
           <Content/>
  
        </div>

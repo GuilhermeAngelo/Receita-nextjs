@@ -1,17 +1,20 @@
 
-
+ import {Links} from "./pweb/pweb.js"
+ import {Content} from "./menu"
+ 
+ export function MariaPrea(props){
+   return(
+      <h1>{props.titulo}</h1>
+   )
+ }
 export default function Home(){
 
-    return (
- 
-       <div>
- 
-          <h2>
- 
-            Viva Santana!
-
-          </h2>
-        <menu/>
+   return (
+      <div>
+         <MariaPrea titulo="Morreu Maria prea"/>
+         <Links/>
+         <Content/>
+         
        </div>
  
     )
