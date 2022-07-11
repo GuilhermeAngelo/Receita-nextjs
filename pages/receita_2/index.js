@@ -1,5 +1,5 @@
 
- import {Links} from "./receita_2/pweb/pweb.js"
+ import {Links} from "./pweb/pweb"
  import {Content} from "./menu"
  
  export function MariaPrea(props){

@@ -1,4 +1,4 @@
-import { Links } from "./pweb/pweb"
+import { Links } from "../receita_2/pweb/pweb"
 
 Links
 

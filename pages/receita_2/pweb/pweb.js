@@ -7,7 +7,7 @@ export default function Pweb(){
 export function Links(){
     return(
         <div>
-            <a href="../menu">Menu</a> <br></br>
+            <a href="receita_2/pweb/pweb">Menu</a><br></br>
             <a href="../">Página principal</a>
         </div>
     )
