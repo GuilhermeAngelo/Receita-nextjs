@@ -2,6 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/receita_4/exercicio1/movieDetails/[movieID]": "pages/receita_4/exercicio1/movieDetails/[movieID].js",
-  "/receita_4/exercicio1/[movies]": "pages/receita_4/exercicio1/[movies].js"
+  "/receita_5/exercicio5/movies": "pages/receita_5/exercicio5/movies.js"
 }

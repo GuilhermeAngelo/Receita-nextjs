@@ -25,20 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/receita_4/exercicio1/[movies]": [
+    "/receita_5/exercicio3/movies": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/receita_4/exercicio1/[movies].js"
+      "static/chunks/pages/receita_5/exercicio3/movies.js"
     ],
-    "/receita_4/exercicio1/movieDetails/[movieID]": [
+    "/receita_5/exercicio5/movies": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/receita_4/exercicio1/movieDetails/[movieID].js"
-    ],
-    "/receita_4/movies2": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/receita_4/movies2.js"
+      "static/chunks/pages/receita_5/exercicio5/movies.js"
     ]
   },
   "ampFirstPages": []

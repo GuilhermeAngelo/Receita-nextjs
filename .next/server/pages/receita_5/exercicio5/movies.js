@@ -1,0 +1,66 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/receita_5/exercicio5/movies";
+exports.ids = ["pages/receita_5/exercicio5/movies"];
+exports.modules = {
+
+/***/ "./pages/receita_5/exercicio5/movies.js":
+/*!**********************************************!*\
+  !*** ./pages/receita_5/exercicio5/movies.js ***!
+  \**********************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"TheMovies\": () => (/* binding */ TheMovies),\n/* harmony export */   \"default\": () => (/* binding */ Movies3)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var swr__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swr */ \"swr\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([swr__WEBPACK_IMPORTED_MODULE_1__]);\nswr__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\nfunction Movies3() {\n    const { 0: url , 1: setUrl  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(\"\");\n    const { data , error  } = (0,swr__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(url, theFetcher);\n    const onClickHandler = (e)=>{\n        e.preventDefault();\n        const keyword = document.getElementById(\"field-movie\").value;\n        if (url === \"\") setUrl(`https://www.omdbapi.com/?apikey=a85a78d&s=${keyword}`);\n        else setUrl(\"\");\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                        id: \"field-movie\",\n                        type: \"text\"\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\guilh\\\\Downloads\\\\next0\\\\pages\\\\receita_5\\\\exercicio5\\\\movies.js\",\n                        lineNumber: 24,\n                        columnNumber: 17\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                        type: \"submit\",\n                        onClick: onClickHandler,\n                        children: \"Buscar\"\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\guilh\\\\Downloads\\\\next0\\\\pages\\\\receita_5\\\\exercicio5\\\\movies.js\",\n                        lineNumber: 25,\n                        columnNumber: 17\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"C:\\\\Users\\\\guilh\\\\Downloads\\\\next0\\\\pages\\\\receita_5\\\\exercicio5\\\\movies.js\",\n                lineNumber: 23,\n                columnNumber: 13\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(TheMovies, {\n                data: error ? {\n                    error: \"Erro na pesquisa\"\n                } : data ? data : {\n                    Search: \"\"\n                },\n                show: url !== \"\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\guilh\\\\Downloads\\\\next0\\\\pages\\\\receita_5\\\\exercicio5\\\\movies.js\",\n                lineNumber: 27,\n                columnNumber: 13\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\guilh\\\\Downloads\\\\next0\\\\pages\\\\receita_5\\\\exercicio5\\\\movies.js\",\n        lineNumber: 22,\n        columnNumber: 9\n    }, this);\n};\nasync function theFetcher(url) {\n    if (url === null || url === \"\") return {\n        Search: \"\"\n    };\n    const res = await fetch(url);\n    const json = await res.json();\n    return json;\n}\nfunction TheMovies({ data , show  }) {\n    if (!show) return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {}, void 0, false, {\n        fileName: \"C:\\\\Users\\\\guilh\\\\Downloads\\\\next0\\\\pages\\\\receita_5\\\\exercicio5\\\\movies.js\",\n        lineNumber: 45,\n        columnNumber: 24\n    }, this);\n    if (data.error) return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: \"falha na requisi\\xe7\\xe3o\"\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\guilh\\\\Downloads\\\\next0\\\\pages\\\\receita_5\\\\exercicio5\\\\movies.js\",\n        lineNumber: 47,\n        columnNumber: 29\n    }, this);\n    if (data.Search === \"\") return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: \"carregando...\"\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\guilh\\\\Downloads\\\\next0\\\\pages\\\\receita_5\\\\exercicio5\\\\movies.js\",\n        lineNumber: 49,\n        columnNumber: 38\n    }, this);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: data.Search.map((m, i)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                children: [\n                    m.Title,\n                    \" --- \",\n                    m.Year\n                ]\n            }, i, true, {\n                fileName: \"C:\\\\Users\\\\guilh\\\\Downloads\\\\next0\\\\pages\\\\receita_5\\\\exercicio5\\\\movies.js\",\n                lineNumber: 54,\n                columnNumber: 42\n            }, this)\n        )\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\guilh\\\\Downloads\\\\next0\\\\pages\\\\receita_5\\\\exercicio5\\\\movies.js\",\n        lineNumber: 53,\n        columnNumber: 9\n    }, this);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9yZWNlaXRhXzUvZXhlcmNpY2lvNS9tb3ZpZXMuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7OztBQUFBO0FBQXdCO0FBQ007QUFFZixTQUFTRSxPQUFPLEdBQUU7SUFFN0IsTUFBTSxFQUxWLEdBS1dDLEdBQUcsR0FMZCxHQUtnQkMsTUFBTSxNQUFJSCwrQ0FBUSxDQUFDLEVBQUUsQ0FBQztJQUNsQyxNQUFNLEVBQUNJLElBQUksR0FBRUMsS0FBSyxHQUFDLEdBQUdOLCtDQUFNLENBQUNHLEdBQUcsRUFBRUksVUFBVSxDQUFDO0lBRTdDLE1BQU1DLGNBQWMsR0FBRyxDQUFDQyxDQUFDLEdBQUs7UUFFMUJBLENBQUMsQ0FBQ0MsY0FBYyxFQUFFO1FBRWxCLE1BQU1DLE9BQU8sR0FBR0MsUUFBUSxDQUFDQyxjQUFjLENBQUMsYUFBYSxDQUFDLENBQUNDLEtBQUs7UUFDNUQsSUFBSVgsR0FBRyxLQUFLLEVBQUUsRUFBRUMsTUFBTSxDQUFDLENBQUMsMENBQTBDLEVBQUVPLE9BQU8sQ0FBQyxDQUFDLENBQUM7YUFFekVQLE1BQU0sQ0FBQyxFQUFFLENBQUM7S0FFbEI7SUFFRCxxQkFFSSw4REFBQ1csS0FBRzs7MEJBQ0EsOERBQUNDLE1BQUk7O2tDQUNELDhEQUFDQyxPQUFLO3dCQUFDQyxFQUFFLEVBQUMsYUFBYTt3QkFBQ0MsSUFBSSxFQUFDLE1BQU07Ozs7OzRCQUFTO2tDQUM1Qyw4REFBQ0MsUUFBTTt3QkFBQ0QsSUFBSSxFQUFDLFFBQVE7d0JBQUNFLE9BQU8sRUFBRWIsY0FBYztrQ0FBRSxRQUFNOzs7Ozs0QkFBUzs7Ozs7O29CQUMzRDswQkFDUCw4REFBQ2MsU0FBUztnQkFBQ2pCLElBQUksRUFBR0MsS0FBSyxHQUFDO29CQUFDQSxLQUFLLEVBQUMsa0JBQWtCO2lCQUFDLEdBQUVELElBQUksR0FBR0EsSUFBSSxHQUFFO29CQUFDa0IsTUFBTSxFQUFDLEVBQUU7aUJBQUM7Z0JBQUdDLElBQUksRUFBRXJCLEdBQUcsS0FBSyxFQUFFOzs7OztvQkFBRzs7Ozs7O1lBQ2hHLENBRVQ7Q0FFSjtBQUVELGVBQWVJLFVBQVUsQ0FBQ0osR0FBRyxFQUFFO0lBRTNCLElBQUlBLEdBQUcsS0FBSyxJQUFJLElBQUlBLEdBQUcsS0FBSyxFQUFFLEVBQUUsT0FBTztRQUFDb0IsTUFBTSxFQUFDLEVBQUU7S0FBQztJQUNsRCxNQUFNRSxHQUFHLEdBQUcsTUFBTUMsS0FBSyxDQUFDdkIsR0FBRyxDQUFDO0lBQzVCLE1BQU13QixJQUFJLEdBQUcsTUFBTUYsR0FBRyxDQUFDRSxJQUFJLEVBQUU7SUFDN0IsT0FBT0EsSUFBSSxDQUFDO0NBRWY7QUFFTSxTQUFTTCxTQUFTLENBQUMsRUFBQ2pCLElBQUksR0FBQ21CLElBQUksR0FBQyxFQUFDO0lBRWxDLElBQUksQ0FBQ0EsSUFBSSxFQUFFLHFCQUFRLDhEQUFDVCxLQUFHOzs7O1lBQU8sQ0FBQztJQUUvQixJQUFJVixJQUFJLENBQUNDLEtBQUssRUFBRSxxQkFBUSw4REFBQ1MsS0FBRztrQkFBQywyQkFBbUI7Ozs7O1lBQU0sQ0FBQztJQUV2RCxJQUFJVixJQUFJLENBQUNrQixNQUFNLEtBQUssRUFBRSxFQUFHLHFCQUFRLDhEQUFDUixLQUFHO2tCQUFDLGVBQWE7Ozs7O1lBQU0sQ0FBQztJQUUxRCxxQkFFSSw4REFBQ0EsS0FBRztrQkFDRVYsSUFBSSxDQUFDa0IsTUFBTSxDQUFDSyxHQUFHLENBQUUsQ0FBQ0MsQ0FBQyxFQUFFQyxDQUFDLGlCQUFLLDhEQUFDZixLQUFHOztvQkFBVWMsQ0FBQyxDQUFDRSxLQUFLO29CQUFDLE9BQUs7b0JBQUNGLENBQUMsQ0FBQ0csSUFBSTs7ZUFBeEJGLENBQUM7Ozs7b0JBQThCO1FBQUEsQ0FBRzs7Ozs7WUFFdkUsQ0FFVDtDQUVKIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcGFnZXMvcmVjZWl0YV81L2V4ZXJjaWNpbzUvbW92aWVzLmpzP2MxMTQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHVzZVNXUiBmcm9tICdzd3InXG5pbXBvcnQge3VzZVN0YXRlfSBmcm9tICdyZWFjdCdcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTW92aWVzMygpe1xuXG4gICAgY29uc3QgW3VybCwgc2V0VXJsXSA9IHVzZVN0YXRlKCcnKVxuICAgIGNvbnN0IHtkYXRhLCBlcnJvcn0gPSB1c2VTV1IodXJsLCB0aGVGZXRjaGVyKVxuXG4gICAgY29uc3Qgb25DbGlja0hhbmRsZXIgPSAoZSkgPT4ge1xuXG4gICAgICAgIGUucHJldmVudERlZmF1bHQoKVxuXG4gICAgICAgIGNvbnN0IGtleXdvcmQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZmllbGQtbW92aWUnKS52YWx1ZSBcbiAgICAgICAgaWYgKHVybCA9PT0gJycpIHNldFVybChgaHR0cHM6Ly93d3cub21kYmFwaS5jb20vP2FwaWtleT1hODVhNzhkJnM9JHtrZXl3b3JkfWApXG5cbiAgICAgICAgZWxzZSBzZXRVcmwoJycpXG5cbiAgICB9XG5cbiAgICByZXR1cm4gKFxuXG4gICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8Zm9ybT5cbiAgICAgICAgICAgICAgICA8aW5wdXQgaWQ9J2ZpZWxkLW1vdmllJyB0eXBlPSd0ZXh0Jz48L2lucHV0PlxuICAgICAgICAgICAgICAgIDxidXR0b24gdHlwZT0nc3VibWl0JyBvbkNsaWNrPXtvbkNsaWNrSGFuZGxlcn0+QnVzY2FyPC9idXR0b24+XG4gICAgICAgICAgICA8L2Zvcm0+XG4gICAgICAgICAgICA8VGhlTW92aWVzIGRhdGE9eyBlcnJvcj97ZXJyb3I6J0Vycm8gbmEgcGVzcXVpc2EnfTogZGF0YSA/IGRhdGE6IHtTZWFyY2g6Jyd9IH0gc2hvdz17dXJsICE9PSAnJ30vPlxuICAgICAgICA8L2Rpdj5cblxuICAgIClcblxufVxuXG5hc3luYyBmdW5jdGlvbiB0aGVGZXRjaGVyKHVybCkge1xuXG4gICAgaWYgKHVybCA9PT0gbnVsbCB8fCB1cmwgPT09ICcnKSByZXR1cm4ge1NlYXJjaDonJ31cbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaCh1cmwpO1xuICAgIGNvbnN0IGpzb24gPSBhd2FpdCByZXMuanNvbigpO1xuICAgIHJldHVybiBqc29uO1xuXG59XG5cbmV4cG9ydCBmdW5jdGlvbiBUaGVNb3ZpZXMoe2RhdGEsc2hvd30pe1xuXG4gICAgaWYgKCFzaG93KSByZXR1cm4gKDxkaXY+PC9kaXY+KSAgICBcblxuICAgIGlmIChkYXRhLmVycm9yKSByZXR1cm4gKDxkaXY+ZmFsaGEgbmEgcmVxdWlzacOnw6NvPC9kaXY+KVxuXG4gICAgaWYgKGRhdGEuU2VhcmNoID09PSAnJyApIHJldHVybiAoPGRpdj5jYXJyZWdhbmRvLi4uPC9kaXY+KVxuXG4gICAgcmV0dXJuIChcblxuICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgeyBkYXRhLlNlYXJjaC5tYXAoIChtLCBpKSA9PiA8ZGl2IGtleT17aX0+e20uVGl0bGV9IC0tLSB7bS5ZZWFyfTwvZGl2PiAgKSB9ICAgICAgICAgICAgXG5cbiAgICAgICAgPC9kaXY+XG5cbiAgICApXG5cbn1cbiJdLCJuYW1lcyI6WyJ1c2VTV1IiLCJ1c2VTdGF0ZSIsIk1vdmllczMiLCJ1cmwiLCJzZXRVcmwiLCJkYXRhIiwiZXJyb3IiLCJ0aGVGZXRjaGVyIiwib25DbGlja0hhbmRsZXIiLCJlIiwicHJldmVudERlZmF1bHQiLCJrZXl3b3JkIiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50QnlJZCIsInZhbHVlIiwiZGl2IiwiZm9ybSIsImlucHV0IiwiaWQiLCJ0eXBlIiwiYnV0dG9uIiwib25DbGljayIsIlRoZU1vdmllcyIsIlNlYXJjaCIsInNob3ciLCJyZXMiLCJmZXRjaCIsImpzb24iLCJtYXAiLCJtIiwiaSIsIlRpdGxlIiwiWWVhciJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/receita_5/exercicio5/movies.js\n");
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ }),
+
+/***/ "swr":
+/*!**********************!*\
+  !*** external "swr" ***!
+  \**********************/
+/***/ ((module) => {
+
+module.exports = import("swr");;
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/receita_5/exercicio5/movies.js"));
+module.exports = __webpack_exports__;
+
+})();
